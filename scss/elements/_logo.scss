@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #222;
+}
+
+.logo__icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 4px;
+}
+
+.logo__text {
+  font-weight: 500;
+}
+
+.logo__word {
+  display: block;
+  line-height: 1;
+}
