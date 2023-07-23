@@ -1,11 +1,14 @@
-.header-search {
+.search {
   display: flex;
   gap: 20px;
-  max-width: 400px;
   width: 100%;
 }
 
-.header-search__controls {
+.search__label {
+  font-size: 16px;
+}
+
+.search__controls {
   position: relative;
   display: flex;
   flex-grow: 1;
@@ -23,15 +26,15 @@
   }
 }
 
-.header-search__input {
+.search__input {
   flex-grow: 1;
 }
 
-.header-search__btn {
+.search__btn {
   padding: 0;
 }
 
-.header-search__icon {
+.search__icon {
   width: 16px;
   height: 16px;
 }

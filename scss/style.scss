@@ -7,10 +7,15 @@
 @import "./elements/catalog-btn";
 @import "./elements/input";
 
+@import "./blocks/search";
 @import "./blocks/header-top";
 @import "./blocks/menu";
 @import "./blocks/submenu";
 @import "./blocks/short-basket";
 @import "./blocks/header-center";
 @import "./blocks/nav";
-@import "./blocks/header-search";
+
+@import "./blocks/catalog";
+@import "./blocks/catalog-nav";
+@import "./blocks/catalog-menu";
+@import "./blocks/catalog-category";
