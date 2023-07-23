@@ -4,15 +4,27 @@
   outline: none;
   text-align: center;
   color: #444;
-  background: #fff;
+  background: #ffffff00;
   cursor: pointer;
   padding: 5px 15px;
-  transition: background 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   &_blue {
     background: #3361fa;
     color: #fff;
     &:hover {
       background: #002bb6;
+    }
+  }
+  &_grey {
+    background: #f0f0f0;
+    &:hover {
+      background: #ffffff;
+    }
+  }
+  &_bd {
+    border: 1px solid #aaa;
+    &:hover {
+      border: 1px solid #000;
     }
   }
 }

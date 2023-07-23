@@ -1,0 +1,11 @@
+.header-center {
+  border: 1px solid #f5f5f5;
+}
+
+.header-center__inner {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
