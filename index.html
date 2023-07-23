@@ -14,7 +14,7 @@
       <div class="header-top__inner container">
 
         <a href="/" class="header__logo logo">
-          <img class="logo__icon" src="./images/logo.svg" alt="лого">
+          <img class="logo__icon" src="./images/logo.svg" alt="лого" width="30px" height="30px">
           <p class="logo__text">
             <span class="logo__word">Mineral</span>
             <span class="logo__word">Kingdom</span>
@@ -34,21 +34,43 @@
 
         <div class="menu">
           <div class="menu-item">
-            <img class="menu-item__icon" src="" alt="">
-            <div class="menu__dropdown">
-              <div class="submenu">
-                <a href="/" class="submenu__item">Вход</a>
-                <a href="/" class="submenu__item">Регистрая</a>
+            <div class="menu-item__btn">
+              <img class="menu-item__icon" src="./images/icon/user.svg" alt="" width="36px" height="36px">
+            </div>
+            <div class="menu-dropdown">
+              <div class="menu-dropdown__content">
+                <div class="submenu">
+                  <a href="/" class="submenu__item">Вход</a>
+                  <a href="/" class="submenu__item">Регистрая</a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="menu-item">
-            <img class="menu-item__icon" src="" alt="">
-            <div class="menu__dropdown">
-              <div class="short-basket">
-                <a href="/" class="submenu__item">Вход</a>
-                <a href="/" class="submenu__item">Регистрая</a>
+            <div class="menu-item__btn">
+              <span class="menu-item__sticker">13</span>
+              <img class="menu-item__icon" src="./images/icon/basket.svg" alt="" width="30px" height="30px">
+            </div>
+            <div class="menu-dropdown">
+              <div class="menu-dropdown__content">
+                <div class="short-basket">
+                  <div class="short-basket__title">Корзина</div>
+                  <div class="short-basket__info">
+                    <p class="short-basket__row">
+                      <span class="short-basket__label">Количество:</span>
+                      <span class="short-basket__value">13шт</span>
+                    </p>
+
+                    <p class="short-basket__row">
+                      <span class="short-basket__label">На сумму:</span>
+                      <span class="short-basket__value">10 100руб</span>
+                    </p>
+                  </div>
+                  <a href="./basket.html" class="short-basket__btn btn btn_blue">
+                    Оформить заказ
+                  </a>
+                </div>
               </div>
             </div>
           </div>

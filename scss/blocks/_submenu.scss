@@ -1,0 +1,17 @@
+.submenu {
+  padding: 10px;
+}
+
+.submenu__item {
+  display: block;
+  margin-bottom: 5px;
+  color: #999;
+  transition: 0.2s ease-in-out;
+  font-weight: 500;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    color: #000;
+  }
+}
