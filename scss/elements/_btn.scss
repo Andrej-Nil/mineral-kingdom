@@ -15,6 +15,13 @@
       background: #002bb6;
     }
   }
+  &_green {
+    background: #009d54;
+    color: #ffffff;
+    &:hover {
+      background: #03c269;
+    }
+  }
   &_grey {
     background: #f0f0f0;
     &:hover {
