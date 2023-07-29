@@ -60,8 +60,12 @@ body {
   color: #444;
   background: rgba(255, 255, 255, 0);
   cursor: pointer;
-  padding: 5px 15px;
+  padding: 10px 30px;
   transition: 0.2s ease-in-out;
+}
+.btn_s {
+  padding: 7px 20px;
+  font-size: 13px;
 }
 .btn_blue {
   background: #3361fa;
@@ -106,6 +110,27 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
+}
+
+.sticker {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.sticker__icon {
+  width: 100%;
+  height: 100%;
+}
+.sticker__icon_btn {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.sticker__icon.active {
+  opacity: 1;
 }
 
 .search {
@@ -545,6 +570,18 @@ body {
   margin-bottom: 30px;
 }
 
+.section__content {
+  margin-bottom: 30px;
+}
+
+.section__bottom {
+  display: flex;
+}
+
+.section__btn {
+  margin-left: auto;
+}
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -581,14 +618,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.product-card__sticker {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border-radius: 50%;
 }
 
 .product-card__img-link {

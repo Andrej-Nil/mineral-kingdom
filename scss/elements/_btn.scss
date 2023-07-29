@@ -6,8 +6,12 @@
   color: #444;
   background: #ffffff00;
   cursor: pointer;
-  padding: 5px 15px;
+  padding: 10px 30px;
   transition: 0.2s ease-in-out;
+  &_s {
+    padding: 7px 20px;
+    font-size: 13px;
+  }
   &_blue {
     background: #3361fa;
     color: #fff;
