@@ -657,4 +657,56 @@ body {
 .product-card__price {
   font-size: 16px;
   font-weight: 500;
+}
+
+.footer {
+  background: #bbb;
+}
+
+.footer__inner {
+  padding: 30px 0 0;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer__contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__city {
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+}
+
+.footer__phone {
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+}
+
+.footer__mail {
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+}
+
+.footer__bottom {
+  font-size: 14px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__agreement {
+  color: #444;
+}
+.footer__agreement:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
