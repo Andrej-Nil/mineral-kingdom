@@ -21,7 +21,7 @@ li {
 body {
   font-size: 16px;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #3f046f;
+  color: #00075d;
   background: #f0f0f0;
 }
 
@@ -70,25 +70,25 @@ body {
   font-size: 13px;
 }
 .btn_base {
-  background: #640cab;
+  background: #000b9a;
   color: #fff;
 }
 .btn_base:hover {
-  background: #a468d5;
+  background: #00075d;
 }
 .btn_second-a {
-  background: #ff4940;
+  background: #df2700;
   color: #fff;
 }
 .btn_second-a:hover {
-  background: #bf3730;
+  background: #861700;
 }
 .btn_second-b {
-  background: #3f8fd2;
+  background: #5d1e69;
   color: #fff;
 }
 .btn_second-b:hover {
-  background: #25547b;
+  background: #c84dde;
 }
 
 .catalog-btn {
@@ -139,6 +139,7 @@ body {
 
 .search__label {
   font-size: 16px;
+  color: #00075d;
 }
 
 .search__controls {
@@ -156,7 +157,7 @@ body {
   display: block;
   width: 100%;
   height: 1px;
-  background: #a468d5;
+  background: #00075d;
 }
 
 .search__input {
@@ -177,7 +178,7 @@ body {
 }
 
 .header-top {
-  background: #3f046f;
+  background: #00075d;
   height: 60px;
 }
 
@@ -201,7 +202,7 @@ body {
 }
 
 .header__contact {
-  color: #a468d5;
+  color: #8c92e0;
   font-weight: 500;
   text-decoration: none;
 }
@@ -241,7 +242,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #a468d5;
+  background: #df2700;
   color: #fff;
   border-radius: 50%;
   font-size: 9px;
@@ -309,7 +310,7 @@ body {
 }
 
 .header-center {
-  background: #fff;
+  background: #ffffff;
 }
 
 .header-center__inner {
@@ -336,7 +337,7 @@ body {
 .nav__item {
   position: relative;
   font-weight: 500;
-  color: #3f046f;
+  color: #00075d;
 }
 .nav__item.active::before {
   bottom: -7px;
@@ -350,7 +351,7 @@ body {
   display: block;
   height: 1px;
   width: 100%;
-  background: #3f046f;
+  background: #00075d;
   opacity: 0;
   transition: 0.2s ease-in-out;
 }
@@ -581,6 +582,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 30px;
+  color: #000b9a;
 }
 
 .section__content {
@@ -673,7 +675,7 @@ body {
 }
 
 .footer {
-  background: #043c6b;
+  background: #4b0058;
 }
 
 .footer__inner {
@@ -695,12 +697,12 @@ body {
 .footer__city {
   font-size: 16px;
   font-weight: 500;
-  color: #66a1d2;
+  color: #d18ade;
 }
 
 .footer__phone {
   font-size: 18px;
-  color: #66a1d2;
+  color: #d18ade;
   font-weight: 500;
 }
 .footer__phone:hover {
@@ -709,7 +711,7 @@ body {
 
 .footer__mail {
   font-size: 16px;
-  color: #66a1d2;
+  color: #d18ade;
   font-weight: 500;
 }
 .footer__mail:hover {
@@ -724,18 +726,18 @@ body {
 }
 
 .footer-nav__item {
-  color: #66a1d2;
+  color: #d18ade;
 }
 .footer-nav__item::before {
-  background: #66a1d2;
+  background: #d18ade;
 }
 
 .footer__copy {
-  color: #66a1d2;
+  color: #d18ade;
 }
 
 .footer__agreement {
-  color: #66a1d2;
+  color: #d18ade;
 }
 .footer__agreement:hover {
   color: #fff;
