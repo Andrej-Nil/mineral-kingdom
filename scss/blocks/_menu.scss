@@ -19,7 +19,7 @@
   }
 }
 .menu-item__btn {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .menu-item__sticker {
@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #002bb6;
+  background: $base-color-5;
   color: #fff;
   border-radius: 50%;
   font-size: 9px;

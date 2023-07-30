@@ -6,7 +6,7 @@
 .nav__item {
   position: relative;
   font-weight: 500;
-  color: #000;
+  color: $base-color-3;
   &.active {
     &::before {
       bottom: -7px;
@@ -21,7 +21,7 @@
     display: block;
     height: 1px;
     width: 100%;
-    background: #000;
+    background: $base-color-3;
     opacity: 0;
     transition: 0.2s ease-in-out;
   }

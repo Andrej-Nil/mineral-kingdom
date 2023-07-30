@@ -1,5 +1,5 @@
 .footer {
-  background: #bbb;
+  background: $second-color-b3;
 }
 
 .footer__inner {
@@ -20,20 +20,26 @@
 
 .footer__city {
   font-size: 16px;
-  color: #444;
   font-weight: 500;
+  color: $second-color-b5;
 }
 
 .footer__phone {
   font-size: 18px;
-  color: #444;
+  color: $second-color-b5;
   font-weight: 500;
+  &:hover {
+    color: #fff;
+  }
 }
 
 .footer__mail {
   font-size: 16px;
-  color: #444;
+  color: $second-color-b5;
   font-weight: 500;
+  &:hover {
+    color: #fff;
+  }
 }
 .footer__bottom {
   font-size: 14px;
@@ -42,9 +48,21 @@
   justify-content: space-between;
 }
 
+.footer-nav__item {
+  color: $second-color-b5;
+  &::before {
+    background: $second-color-b5;
+  }
+}
+
+.footer__copy {
+  color: $second-color-b5;
+}
+
 .footer__agreement {
-  color: #444;
+  color: $second-color-b5;
   &:hover {
+    color: #fff;
     text-decoration: underline;
   }
 }
