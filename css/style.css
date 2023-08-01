@@ -674,6 +674,39 @@ body {
   font-weight: 500;
 }
 
+.category-card {
+  max-width: 200px;
+  width: 100%;
+}
+.category-card:hover .category-card__pic {
+  transform: translate(0, -15px);
+}
+
+.category-card__link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #000b9a;
+  padding: 20px 0;
+}
+
+.category-card__pic {
+  position: relative;
+  width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.category-card__img {
+  width: 100%;
+  height: 100%;
+}
+
+.category-card__title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .footer {
   background: #4b0058;
 }
