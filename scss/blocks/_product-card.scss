@@ -54,9 +54,9 @@
 }
 
 .product-card__link {
-  color: #444;
+  color: $text-base;
   &:hover {
-    color: #b60000;
+    color: $second-color-a1;
   }
 }
 
