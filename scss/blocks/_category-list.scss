@@ -1,5 +1,5 @@
 .category-list {
-  display: flex;
-  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
