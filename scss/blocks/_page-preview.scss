@@ -1,0 +1,23 @@
+.page-preview {
+  margin-bottom: 50px;
+}
+
+.page-preview__title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.page-preview__content {
+  display: flex;
+  gap: 30px;
+}
+
+.page-preview__desc {
+  flex-grow: 1;
+}
+
+.page-preview__img {
+  width: 300px;
+  height: 300px;
+}

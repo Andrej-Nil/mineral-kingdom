@@ -1,0 +1,19 @@
+//.main {
+//}
+
+.main__with-sidebar {
+  //align-items: start;
+  display: flex;
+  gap: 20px;
+}
+
+.main__sidebar {
+  width: 285px;
+  padding: 30px 15px;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.main__content {
+  flex-grow: 1;
+}

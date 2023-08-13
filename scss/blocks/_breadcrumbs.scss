@@ -1,0 +1,14 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+}
+
+.breadcrumbs__link {
+  color: $text-base;
+  &:hover {
+    color: $second-color-a1;
+  }
+}

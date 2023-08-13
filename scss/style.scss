@@ -9,6 +9,7 @@
 @import "./elements/input";
 @import "./elements/sticker";
 
+@import "./blocks/main";
 @import "./blocks/search";
 @import "./blocks/header";
 @import "./blocks/header-top";
@@ -17,6 +18,8 @@
 @import "./blocks/short-basket";
 @import "./blocks/header-center";
 @import "./blocks/nav";
+@import "./blocks/breadcrumbs";
+
 @import "./blocks/slider";
 @import "./blocks/main-slider";
 
@@ -29,6 +32,8 @@
 @import "./blocks/product-card";
 @import "./blocks/category-list";
 @import "./blocks/category-card";
+@import "./blocks/page-preview";
+@import "./blocks/categories";
 
 @import "./blocks/product";
 
