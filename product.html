@@ -110,49 +110,68 @@
   </header>
   <main class="main container">
     <section class="product section container">
-      <div class="product-slider">
-        <div class="product-slider__track">
-          <div class="product-slider__slide">
+      <div class="product-slider slider">
+        <div class="product-slider__track slider__track">
+          <div class="slider__slide">
             <img src="./images/img/prod-slide1.jpg" alt="" class="product-slider__img">
           </div>
-          <div class="product-slider__slide">
+          <div class="slider__slide">
             <img src="./images/img/prod-slide2.jpg" alt="" class="product-slider__img">
           </div>
-          <div class="product-slider__slide">
+          <div class="slider__slide">
             <img src="./images/img/prod-slide3.jpg" alt="" class="product-slider__img">
           </div>
         </div>
-        <div class="product-slider__dots">
-          <div class="product-slider__dot"></div>
-        </div>
+        <span class="slider__arrow next"></span>
+        <span class="slider__arrow prev"></span>
 
       </div>
 
       <div class="product__content">
         <h1 class="product__title">Окаменелый отпечаток папаратника</h1>
-        <p class="product__homeland">Северный кавказ. г.Кавказ</p>
-        <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam repellat
-          nam. Dolorem, cum dolor quia odio optio ratione. Eligendi voluptatum quod quia? Animi quas repellat temporibus
+
+        <div class="product-price">
+          <span class="product-price__label">Цена</span>
+          <span class="product-price__value">999 157 567</span>
+          <span class="product-price__unit">₽</span>
+        </div>
+        <p class="product__deposit">Месторождение: Северный кавказ. г.Кавказ</p>
+        <p class="product__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veniam
+          repellat
+          nam. Dolorem, cum dolor quia odio optio ratione. Eligendi voluptatum quod quia? Animi quas repellat
+          temporibus
           debitis illo repudiandae aspernatur nisi maiores! Illum fuga quaerat excepturi minus enim eveniet?</p>
 
+
+
         <div class="product-parameter">
+          <div class="product-parameter__title">Характеристики:</div>
           <div class="product-parameter__item">
             <span class="product-parameter__label">Матерьял</span>
+            <span class="product-parameter__line"></span>
             <div class="product-parameter__value">Гранит</div>
           </div>
           <div class="product-parameter__item">
             <span class="product-parameter__label">Высота</span>
+            <span class="product-parameter__line"></span>
             <div class="product-parameter__value">15см</div>
           </div>
           <div class="product-parameter__item">
             <span class="product-parameter__label">Ширина</span>
+            <span class="product-parameter__line"></span>
             <div class="product-parameter__value">10см</div>
           </div>
           <div class="product-parameter__item">
             <span class="product-parameter__label">Вес</span>
+            <span class="product-parameter__line"></span>
             <div class="product-parameter__value">300гр</div>
           </div>
         </div>
+        <div class="product__control">
+          <button class="product__btn btn btn_second-a">В избранное</button>
+          <button class="product__btn btn btn_base">В корзину</button>
+        </div>
+
       </div>
     </section>
 
