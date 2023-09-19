@@ -1,0 +1,18 @@
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.contact-item__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-item__value {
+  font-size: 18px;
+  color: $text-base;
+  &:hover {
+    color: $second-color-a1;
+  }
+}

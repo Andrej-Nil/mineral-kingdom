@@ -1,0 +1,26 @@
+//.filter {
+//}
+
+.filter__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.filter-item {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter-item__title {
+  margin-bottom: 7px;
+  font-weight: 500;
+  flex: 16;
+}
+
+.filter-item__range {
+  display: flex;
+  gap: 10px;
+}

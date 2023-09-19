@@ -7,8 +7,10 @@
 @import "./elements/btn";
 @import "./elements/catalog-btn";
 @import "./elements/input";
+@import "./elements/input-control";
 @import "./elements/sticker";
 @import "./elements/page-title";
+@import "./elements/select";
 
 @import "./blocks/main";
 @import "./blocks/search";
@@ -39,6 +41,11 @@
 @import "./blocks/news-list";
 @import "./blocks/news-card";
 @import "./blocks/news";
+@import "./blocks/contacts";
+@import "./blocks/contact-list";
+@import "./blocks/contact-item";
+@import "./blocks/setting-view";
+@import "./blocks/filter";
 
 @import "./blocks/product";
 
