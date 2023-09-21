@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 285px;
+  max-width: 320px;
   width: 100%;
   border: 1px solid #dddddd;
   padding: 10px;
@@ -10,10 +10,6 @@
   transition: box-shadow 0.2s ease-in-out;
   &:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .product-card__img-link {
-    overflow: hidden;
   }
 
   &:hover .product-card__img {
@@ -35,6 +31,7 @@
 .product-card__img-link {
   background: #000;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .product-card__img {

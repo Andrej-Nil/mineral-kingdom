@@ -11,6 +11,8 @@
 @import "./elements/sticker";
 @import "./elements/page-title";
 @import "./elements/select";
+@import "./elements/checkbox";
+@import "./elements/checkbox-control";
 
 @import "./blocks/main";
 @import "./blocks/search";
@@ -26,6 +28,7 @@
 @import "./blocks/slider";
 @import "./blocks/main-slider";
 
+@import "./blocks/sidebar";
 @import "./blocks/catalog";
 @import "./blocks/catalog-nav";
 @import "./blocks/catalog-menu";
@@ -33,6 +36,7 @@
 @import "./blocks/section";
 @import "./blocks/product-list";
 @import "./blocks/product-card";
+@import "./blocks/product-row";
 @import "./blocks/category-list";
 @import "./blocks/category-card";
 @import "./blocks/page-preview";
@@ -46,6 +50,9 @@
 @import "./blocks/contact-item";
 @import "./blocks/setting-view";
 @import "./blocks/filter";
+@import "./blocks/basket";
+@import "./blocks/form";
+@import "./blocks/message";
 
 @import "./blocks/product";
 

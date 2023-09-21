@@ -1,0 +1,10 @@
+.checkbox-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.checkbox-control__name {
+  font-size: 14px;
+}

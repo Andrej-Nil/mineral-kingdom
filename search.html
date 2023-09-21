@@ -118,9 +118,507 @@
     <main class="main container">
 
       <h1 class="page-title">Резултаты поиска</h1>
-      <div class="section">
+      <div class="main__with-sidebar">
+        <div class="sidebar">
+          <div class="filter">
+            <p class="filter__title">Фильтр</p>
 
-        <div class="section__content">
+            <div class="filter__list">
+
+              <div class="filter-item">
+                <p class="filter-item__title">Цвет</p>
+                <div class="select select--column">
+                  <div class="select__body">
+                    <div class="select__title">
+                      <span class="select__value">Синий</span>
+                      <img class="select__arrow" src="./images/icon/arrow-down.svg" aly="" />
+                    </div>
+
+                    <div class="select__dropdown">
+                      <div class="select__options">
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Красный</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Прозрачный</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Белый</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Разноцветный</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Пурпурный</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <!--<div class="option-list">
+  
+                      </div>-->
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="filter-item">
+                <p class="filter-item__title">Цена</p>
+                <div class="filter-item__range">
+
+
+                  <div class="input-control">
+                    <span class="input-control__title">От</span>
+                    <input type="number" class="input input--bd">
+                  </div>
+                  <div class="input-control">
+                    <span class="input-control__title">До</span>
+                    <input type="number" class="input input--bd">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="main__content">
+          <section class="section">
+            <div class="section__content">
+
+              <div class="setting-view">
+
+                <div class="select">
+                  <span class="select__label">Сортировать: </span>
+                  <div class="select__body">
+                    <div class="select__title">
+                      <span class="select__value">Популярные</span>
+                      <img class="select__arrow" src="./images/icon/arrow-down.svg" aly="" />
+                    </div>
+
+                    <div class="select__dropdown select__dropdown--absolute">
+                      <div class="select__options">
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">От А до Я</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">От Я до А</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Популярные</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Сначало дешевые</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">Сначало дорогие</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <!--<div class="option-list">
+  
+                      </div>-->
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="select">
+                  <span class="select__label">Показать: </span>
+                  <div class="select__body">
+                    <div class="select__title">
+                      <span class="select__value">20</span>
+                      <img class="select__arrow" src="./images/icon/arrow-down.svg" aly="" />
+                    </div>
+
+                    <div class="select__dropdown select__dropdown--absolute">
+                      <div class="select__options">
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">40</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">60</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">80</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                        <div class="option">
+
+                          <label class="option__label">
+                            <span class="option__name">100</span>
+                            <input class="option__input" type="radio" name="sort" value="01">
+                            <span class="option__fake"></span>
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <!--<div class="option-list">
+  
+                      </div>-->
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="product-list">
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__sticker-list">
+                    <span class="product-card__sticker sticker">
+                      <img src="./images/icon/heart.svg" alt="" class="sticker__icon sticker__icon_btn active">
+                    </span>
+                  </div>
+
+                  <a href="./product.html" class="product-card__img-link">
+                    <img src="./images/img/product-2.jpg" alt="" class="product-card__img">
+                  </a>
+
+                  <p class="product-card__title">
+                    <a href="/" class="product-card__link">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </p>
+
+                  <div class="product-card__bottom">
+                    <p class="product-card__price">100 245 руб.</p>
+                    <button class="product-card__btn btn btn_second-a btn_s">В корзину</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
 
         </div>
       </div>
