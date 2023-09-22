@@ -1,5 +1,5 @@
 .header-top {
-  background: $base-color-3;
+  background: $color-1;
   height: 60px;
 }
 
@@ -19,14 +19,14 @@
 
 .header__city {
   font-size: 16px;
-  color: #fff;
+  color: $color-3;
 }
 .header__contact {
-  color: $base-color-5;
+  color: $color-2;
   font-weight: 500;
   text-decoration: none;
 
   &:hover {
-    color: #fff;
+    color: $color-3;
   }
 }

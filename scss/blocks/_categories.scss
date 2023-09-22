@@ -15,7 +15,7 @@
   font-weight: 500;
   color: $text-base;
   &:hover {
-    color: $second-color-a1;
+    color: $color-4;
   }
 }
 
@@ -26,7 +26,7 @@
   color: $text-base;
   margin-bottom: 3px;
   &:hover {
-    color: $second-color-a1;
+    color: $color-4;
   }
 
   &.hide {
@@ -37,10 +37,10 @@
 .category__more {
   font-size: 14px;
   padding: 2px 0;
-  color: $second-color-a1;
+  color: $color-4;
   cursor: pointer;
 
   &:hover {
-    text-shadow: 0px 0px 1px $second-color-a1;
+    text-shadow: 0px 0px 1px $color-4;
   }
 }

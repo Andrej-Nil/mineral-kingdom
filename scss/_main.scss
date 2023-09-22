@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   font-family: "Roboto", "Arial", sans-serif;
   color: $text-base;
-  background: #f0f0f0;
+  background: $color-bg;
 }
 
 .app {
@@ -19,12 +19,16 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1310px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 .slim-container {
+  display: flex;
+
   width: 100%;
-  max-width: 640px;
-  margin: 0 auto;
+  max-width: 730px;
+  padding: 0 15px;
+  margin: auto auto;
 }

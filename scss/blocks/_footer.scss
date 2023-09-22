@@ -1,6 +1,6 @@
 .footer {
   margin-top: auto;
-  background: $second-color-b3;
+  background: $color-1;
 }
 
 .footer__inner {
@@ -22,24 +22,24 @@
 .footer__city {
   font-size: 16px;
   font-weight: 500;
-  color: $second-color-b5;
+  color: $color-3;
 }
 
 .footer__phone {
   font-size: 18px;
-  color: $second-color-b5;
+  color: $color-2;
   font-weight: 500;
   &:hover {
-    color: #fff;
+    color: $color-3;
   }
 }
 
 .footer__mail {
   font-size: 16px;
-  color: $second-color-b5;
+  color: $color-2;
   font-weight: 500;
   &:hover {
-    color: #fff;
+    color: $color-3;
   }
 }
 .footer__bottom {
@@ -50,20 +50,20 @@
 }
 
 .footer-nav__item {
-  color: $second-color-b5;
+  color: $color-3;
   &::before {
-    background: $second-color-b5;
+    background: $color-3;
   }
 }
 
 .footer__copy {
-  color: $second-color-b5;
+  color: $color-3;
 }
 
 .footer__agreement {
-  color: $second-color-b5;
+  color: $color-2;
   &:hover {
-    color: #fff;
+    color: $color-3;
     text-decoration: underline;
   }
 }

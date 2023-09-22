@@ -15,26 +15,26 @@
   }
 
   &_base {
-    background: $base-color-1;
+    background: $color-4;
     color: #fff;
     &:hover {
-      background: $base-color-3;
+      background: $color-5;
     }
   }
 
   &_second-a {
-    background: $second-color-a1;
+    background: $color-4;
     color: #fff;
     &:hover {
-      background: $second-color-a3;
+      background: #a04b05;
     }
   }
 
   &_second-b {
-    background: $second-color-b2;
+    background: $color-4;
     color: #fff;
     &:hover {
-      background: $second-color-b4;
+      background: #a04b05;
     }
   }
 
