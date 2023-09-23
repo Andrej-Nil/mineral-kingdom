@@ -1,0 +1,11 @@
+.mobile-menu {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 15px;
+  background: $color-1;
+  @media (max-width: 1080px) {
+    display: block;
+  }
+}

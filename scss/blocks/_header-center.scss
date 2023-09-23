@@ -1,5 +1,8 @@
 .header-center {
   background: #ffffff;
+  @media (max-width: 1080px) {
+    display: none;
+  }
 }
 
 .header-center__inner {
@@ -10,9 +13,6 @@
   gap: 20px;
 }
 
-.header-search {
-  max-width: 400px;
-}
 .header__search {
-  max-width: 400px;
+  max-width: 300px;
 }

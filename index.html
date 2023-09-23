@@ -24,6 +24,7 @@
           <div class="header__contact-info">
             <span class="header__city">Екатеринбург</span>
 
+
             <a href="mailto:test@test.ru" class="header__contact">
               test@test.ru
             </a>
@@ -32,8 +33,32 @@
             </a>
 
           </div>
+        </div>
+      </div>
+      <div class="header-center">
+        <div class="header-center__inner container">
+          <span data-catalog-btn class="catalog-btn btn btn_base  btn_bd">
+            <span class="catalog-btn__text">Каталог</span>
+            <img class="catalog-btn__icon" src="./images/icon/catalog.svg" alt="" width="20px" height="20px">
+          </span>
+
+          <nav class="nav">
+            <a href="/" class="nav__item active">Главная</a>
+            <a href="/about.html" class="nav__item">О нас</a>
+            <a href="/news.html" class="nav__item">Новости</a>
+            <a href="/contacts.html" class="nav__item">Контакты</a>
+            <a href="/delivery.html" class="nav__item">Доставка</a>
+          </nav>
 
           <div class="menu">
+
+            <div data-search-btn class="menu-item">
+              <div class="menu-item__btn">
+                <img class="menu-item__icon" src="./images/icon/search.svg" alt="" width="36px" height="36px">
+              </div>
+            </div>
+
+
             <div class="menu-item">
               <div class="menu-item__btn">
                 <img class="menu-item__icon" src="./images/icon/user.svg" alt="" width="36px" height="36px">
@@ -78,38 +103,22 @@
 
 
           </div>
-        </div>
-      </div>
-      <div class="header-center">
-        <div class="header-center__inner container">
-          <span class="catalog-btn btn btn_base  btn_bd">
-            <span class="catalog-btn__text">Каталог</span>
-            <img class="catalog-btn__icon" src="./images/icon/menu.svg" alt="" width="20px" height="20px">
-          </span>
 
-          <nav class="nav">
-            <a href="/" class="nav__item active">Главная</a>
-            <a href="/about.html" class="nav__item">О нас</a>
-            <a href="/news.html" class="nav__item">Новости</a>
-            <a href="/contacts.html" class="nav__item">Контакты</a>
-            <a href="/delivery.html" class="nav__item">Доставка</a>
-          </nav>
+          <!--<form class="header__search search" action="" method="GET">-->
+          <!--<label class="search__label" for="headerSearch">Поиск</label>-->
+          <!--<div class="search__controls">
+              <input id="headerSearch" class="search__input input" type="text" name="search" />-->
 
-          <form class="header__search search" action="" method="GET">
-            <label class="search__label" for="headerSearch">Поиск</label>
-            <div class="search__controls">
-              <input id="headerSearch" class="search__input input" type="text" name="search" />
+          <!--<button type="submit" class="search__btn btn">
+              <img class="search__icon" src="./images/icon/search.svg" alt="" width="20px" height="20px">
+            </button>-->
+          <!--</div>-->
 
-              <button type="submit" class="search__btn btn">
-                <img class="search__icon" src="./images/icon/search.svg" alt="" width="20px" height="20px">
-              </button>
-            </div>
-
-          </form>
+          <!--</form>-->
         </div>
       </div>
     </header>
-    <main class="main container">
+    <main class="main container dn">
       <div class="main-slider slider">
         <div class="slider__track">
           <div class="slider__slide">
@@ -314,7 +323,7 @@
 
 
     </main>
-    <footer class="footer">
+    <footer class="footer dn">
       <div class="footer__inner">
         <div class="footer__content container">
           <a href="/" class="logo">
@@ -346,7 +355,47 @@
       </div>
     </footer>
 
-    <div class="catalog">
+
+    <div class="mobile-menu">
+      <div class="menu">
+
+        <div class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/catalog-m.svg" alt="" width="36px" height="36px">
+          </div>
+        </div>
+
+
+        <div class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/menu-m.svg" alt="" width="30px" height="30px">
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/user-m.svg" alt="" width="36px" height="36px">
+          </div>
+        </div>
+
+        <div data-search-btn class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/search-m.svg" alt="" width="36px" height="36px">
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__btn">
+            <span class="menu-item__sticker">13</span>
+            <img class="menu-item__icon" src="./images/icon/basket-m.svg" alt="" width="30px" height="30px">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div id="catalog" class="catalog">
+      <div data-close class="catalog__bg"></div>
       <div class="catalog__inner">
         <div class="catalog-nav">
 
@@ -379,7 +428,7 @@
 
 
 
-            <span class="catalog__close"></span>
+            <span data-close class="catalog__close"></span>
           </div>
           <!--catalog-menu-->
           <div class="catalog-menu">
