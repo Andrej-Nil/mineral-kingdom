@@ -1,0 +1,38 @@
+.search-modal {
+  &.show {
+    & .search-modal__inner {
+      top: 60px;
+    }
+  }
+}
+
+.search-modal__top {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-modal__close {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.search-modal__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: $text-base;
+}
+
+.search-modal__inner {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  top: -100%;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  transition: top 0.25s ease;
+}

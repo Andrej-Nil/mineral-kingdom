@@ -1,31 +1,9 @@
 .catalog {
-  position: fixed;
-  display: flex;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.25s, top 0.25s, visibility 0s ease 0.25s;
   &.show {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
     & .catalog__inner {
       transform: translateX(0);
     }
   }
-}
-
-.catalog__bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .catalog__inner {

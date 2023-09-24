@@ -366,7 +366,7 @@
         </div>
 
 
-        <div class="menu-item">
+        <div data-nav-btn class="menu-item">
           <div class="menu-item__btn">
             <img class="menu-item__icon" src="./images/icon/menu-m.svg" alt="" width="30px" height="30px">
           </div>
@@ -391,11 +391,11 @@
           </div>
         </div>
 
-
       </div>
     </div>
-    <div id="catalog" class="catalog">
-      <div data-close class="catalog__bg"></div>
+
+    <div id="catalogModal" class="modal catalog">
+      <div data-close class="modal__bg"></div>
       <div class="catalog__inner">
         <div class="catalog-nav">
 
@@ -415,7 +415,7 @@
         <div class="catalog__content">
 
           <div class="catalog__top">
-            <div class="catalog__search search" action="" method="GET">
+            <div class="catalog__search search">
               <div class="search__controls">
                 <input id="catalogSearch" class="search__input input" type="text" name="search" placeholder="Поиск" />
 
@@ -423,7 +423,6 @@
                   <img class="search__icon" src="./images/icon/search.svg" alt="" width="20px" height="20px">
                 </button>
               </div>
-
             </div>
 
 
@@ -1281,6 +1280,55 @@
             </div>
           </div>
           <!--catalog-menu-->
+        </div>
+
+      </div>
+    </div>
+
+    <div id="searchModal" class="modal search-modal">
+      <div data-close class="modal__bg"></div>
+      <div class="search-modal__inner slim-container">
+        <div class="search-modal__top">
+          <p class="search-modal__title">Поиск</p>
+          <img data-close src="./images/icon/close.svg" alt="" class="search-modal__close">
+        </div>
+
+        <form class="catalog__search search" action="" method="GET">
+          <div class="search__controls">
+            <input class="search__input input" type="text" name="search" placeholder="Поиск" />
+
+            <button class="search__btn btn">
+              <img class="search__icon" src="./images/icon/search.svg" alt="" width="22px" height="22px">
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="navModal" class="modal nav-modal">
+      <div data-close class="modal__bg"></div>
+      <div class="nav-modal__inner">
+
+        <div class="nav-modal__top">
+          <p class="nav-modal__title">Навигация</p>
+          <img data-close src="./images/icon/close.svg" alt="" class="nav-modal__close">
+        </div>
+        <div class="nav-modal__list">
+          <a href="/" class="nav-modal__item">
+            Главная
+          </a>
+          <a href="/about.html" class="nav-modal__item">
+            О нас
+          </a>
+          <a href="/news.html" class="nav-modal__item">
+            Новости
+          </a>
+          <a href="/contacts.html" class="nav-modal__item">
+            Контакты
+          </a>
+          <a href="/.html" class="nav-modal__item">
+            Доставка
+          </a>
         </div>
 
       </div>

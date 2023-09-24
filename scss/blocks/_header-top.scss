@@ -33,8 +33,12 @@
   color: $color-2;
   font-weight: 500;
   text-decoration: none;
-
+  font-size: 16px;
   &:hover {
+    color: $color-3;
+  }
+  @media (max-width: 576px) {
+    font-size: 12px;
     color: $color-3;
   }
 }

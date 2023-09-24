@@ -1,20 +1,26 @@
 "use strict";
-class Catalog {
-  constructor() {
-    this.$catalog = document.querySelector("#catalog");
-    this.init();
+class Modal {
+  constructor(modalId) {
+    this.$modal = document.querySelector(modalId);
   }
-  init = () => {
-    if (!this.$catalog) return;
-    this.listeners();
-  }
-
   open = () => {
-    this.$catalog.classList.add('show');
+    this.$modal.classList.add('show');
   }
 
   close = () => {
-    this.$catalog.classList.remove('show');
+    this.$modal.classList.remove('show');
+  }
+}
+
+
+class CatalogModal extends Modal {
+  constructor() {
+    super("#catalogModal");
+    this.init();
+  }
+  init = () => {
+    if (!this.$modal) return;
+    this.listeners();
   }
 
   clickHandler = (e) => {
@@ -29,9 +35,65 @@ class Catalog {
 
   listeners = () => {
     document.addEventListener('click', this.clickHandler);
-    this.$catalog.addEventListener('click', this.clickHandler);
+    this.$modal.addEventListener('click', this.clickHandler);
   }
 
 }
 
-const catalog = new Catalog();
+class SearchModal extends Modal {
+  constructor() {
+    super("#searchModal");
+    this.init();
+  }
+  init = () => {
+    if (!this.$modal) return;
+    this.listeners();
+  }
+
+
+  clickHandler = (e) => {
+    if (e.target.closest('[data-search-btn]')) {
+      this.open()
+    }
+
+    if (e.target.closest('[data-close]')) {
+      this.close();
+    }
+  }
+
+  listeners = () => {
+    document.addEventListener('click', this.clickHandler);
+    this.$modal.addEventListener('click', this.clickHandler);
+  }
+}
+
+class NavModal extends Modal {
+  constructor() {
+    super("#navModal");
+    this.init();
+  }
+  init = () => {
+    if (!this.$modal) return;
+    this.listeners();
+  }
+
+
+  clickHandler = (e) => {
+    if (e.target.closest('[data-nav-btn]')) {
+      this.open()
+    }
+
+    if (e.target.closest('[data-close]')) {
+      this.close();
+    }
+  }
+
+  listeners = () => {
+    document.addEventListener('click', this.clickHandler);
+    this.$modal.addEventListener('click', this.clickHandler);
+  }
+}
+
+const catalogModal = new CatalogModal();
+const searchModal = new SearchModal();
+const navModal = new NavModal();
