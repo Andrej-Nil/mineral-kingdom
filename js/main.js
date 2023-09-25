@@ -94,6 +94,56 @@ class NavModal extends Modal {
   }
 }
 
+class Catalog {
+  constructor() {
+    this.$catalog = document.querySelector('#catalog');
+    this.init();
+  }
+
+  init = () => {
+    if (!this.$catalog) return;
+    this.$categoryNav = this.$catalog.querySelector('#categoryNav');
+    this.$categoryNavList = this.$categoryNav.querySelectorAll('[data-category-item]');
+    this.$categoryList = this.$catalog.querySelectorAll('[data-category]');
+    this.listeners();
+  }
+
+  changeCategoryNavActiveItem = (categoryId) => {
+    this.$categoryNavList.forEach(($item) => {
+      $item.classList.remove('active');
+      if ($item.dataset.categoryItem === categoryId) {
+        $item.classList.add('active');
+      }
+    })
+  }
+
+  changeDisplayedCategory = (categoryId) => {
+    this.$categoryList.forEach(($item) => {
+      $item.classList.remove('show');
+      if ($item.dataset.category === categoryId) {
+        $item.classList.add('show');
+      }
+    })
+  }
+
+  changeActiveCategory = ($target) => {
+    const categoryId = $target.dataset.categoryItem
+    this.changeCategoryNavActiveItem(categoryId);
+    this.changeDisplayedCategory(categoryId)
+  }
+  mouseoverHandler = (e) => {
+    if (e.target.closest('[data-category-item]')) {
+      this.changeActiveCategory(e.target.closest('[data-category-item]'));
+    }
+
+  }
+
+  listeners = () => {
+    this.$categoryNav.addEventListener('mouseover', this.mouseoverHandler)
+  }
+}
+
 const catalogModal = new CatalogModal();
 const searchModal = new SearchModal();
 const navModal = new NavModal();
+const catalog = new Catalog();

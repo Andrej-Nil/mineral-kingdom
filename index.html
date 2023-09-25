@@ -323,7 +323,7 @@
 
 
     </main>
-    <footer class="footer dn">
+    <footer class="footer">
       <div class="footer__inner">
         <div class="footer__content container">
           <a href="/" class="logo">
@@ -335,8 +335,9 @@
           </a>
           <div class="footer__contacts">
             <span class="footer__city">Екатеринбург</span>
-            <a href="/" class="footer__phone">+7-990-000-22-33</a>
             <a href="/" class="footer__mail">test@test.ru</a>
+            <a href="/" class="footer__phone">+7-990-000-22-33</a>
+
           </div>
           <div class="footer-nav nav">
             <a href="/" class="footer-nav__item nav__item">Главная</a>
@@ -359,7 +360,7 @@
     <div class="mobile-menu">
       <div class="menu">
 
-        <div class="menu-item">
+        <div data-catalog-btn class="menu-item">
           <div class="menu-item__btn">
             <img class="menu-item__icon" src="./images/icon/catalog-m.svg" alt="" width="36px" height="36px">
           </div>
@@ -396,20 +397,23 @@
 
     <div id="catalogModal" class="modal catalog">
       <div data-close class="modal__bg"></div>
-      <div class="catalog__inner">
+      <div id="catalog" class="catalog__inner">
         <div class="catalog-nav">
+          <div class="catalog-nav__top">
 
-          <div class="catalog-nav__title">
-            Каталог
+            <p class="catalog-nav__title">
+              Каталог
+            </p>
+
+            <span data-close class="catalog__close"></span>
           </div>
-
-          <div class="catalog-nav__list">
-            <a href="./" class="catalog-nav__link active">Окаменелости</a>
-            <a href="./" class="catalog-nav__link"> Полудрагоценные камни</a>
-            <a href="./" class="catalog-nav__link">Драгоценные камни</a>
-            <a href="./" class="catalog-nav__link">Минералы</a>
-            <a href="./" class="catalog-nav__link">Аксессуары</a>
-            <a href="./" class="catalog-nav__link">Книги</a>
+          <div id="categoryNav" class="catalog-nav__list">
+            <a data-category-item="1" href="./" class="catalog-nav__link active">Окаменелости</a>
+            <a data-category-item="2" href="./" class="catalog-nav__link"> Полудрагоценные камни</a>
+            <a data-category-item="3" href="./" class="catalog-nav__link">Драгоценные камни</a>
+            <a data-category-item="4" href="./" class="catalog-nav__link">Минералы</a>
+            <a data-category-item="5" href="./" class="catalog-nav__link">Аксессуары</a>
+            <a data-category-item="6" href="./" class="catalog-nav__link">Книги</a>
           </div>
         </div>
         <div class="catalog__content">
@@ -430,7 +434,7 @@
             <span data-close class="catalog__close"></span>
           </div>
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="1" class="catalog-menu show">
             <p class="catalog-menu__title">
               Окаменелости
             </p>
@@ -572,7 +576,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu show">
+          <div data-category="2" class="catalog-menu">
             <p class="catalog-menu__title">
               Полудрагоценные камни
             </p>
@@ -714,7 +718,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="3" class="catalog-menu">
             <p class="catalog-menu__title">
               Драгоценные камни
             </p>
@@ -856,7 +860,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="4" class="catalog-menu">
             <p class="catalog-menu__title">
               Минералы
             </p>
@@ -998,7 +1002,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="5" class="catalog-menu">
             <p class="catalog-menu__title">
               Аксессуары
             </p>
@@ -1140,7 +1144,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="6" class="catalog-menu">
             <p class="catalog-menu__title">
               Книги
             </p>
@@ -1313,6 +1317,7 @@
           <p class="nav-modal__title">Навигация</p>
           <img data-close src="./images/icon/close.svg" alt="" class="nav-modal__close">
         </div>
+
         <div class="nav-modal__list">
           <a href="/" class="nav-modal__item">
             Главная

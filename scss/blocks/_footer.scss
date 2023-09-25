@@ -1,10 +1,16 @@
 .footer {
   margin-top: auto;
   background: $color-1;
+  @media (max-width: 1080px) {
+    padding-bottom: 35px;
+  }
 }
 
 .footer__inner {
   padding: 30px 0 0;
+  @media (max-width: 1080px) {
+    padding: 15px 0 0;
+  }
 }
 
 .footer__content {
@@ -17,19 +23,29 @@
 .footer__contacts {
   display: flex;
   gap: 20px;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+  }
 }
 
 .footer__city {
   font-size: 16px;
-  font-weight: 500;
   color: $color-3;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 
 .footer__phone {
-  font-size: 18px;
+  font-size: 16px;
   color: $color-2;
   font-weight: 500;
   &:hover {
+    color: $color-3;
+  }
+  @media (max-width: 576px) {
     color: $color-3;
   }
 }
@@ -41,14 +57,26 @@
   &:hover {
     color: $color-3;
   }
+  @media (max-width: 576px) {
+    color: $color-3;
+  }
 }
 .footer__bottom {
   font-size: 14px;
-  padding: 10px 0;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
-
+.footer-nav {
+  @media (max-width: 1080px) {
+    display: none;
+  }
+}
 .footer-nav__item {
   color: $color-3;
   &::before {
