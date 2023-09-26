@@ -10,6 +10,10 @@
   &--column {
     flex-direction: column;
   }
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
 }
 
 .about__desc {
@@ -17,9 +21,9 @@
 }
 
 .about__img {
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
+  //max-width: 600px;
+  //height: 300px;
+  width: 50%;
   flex-shrink: 0;
   object-fit: cover;
   object-position: center;
@@ -27,5 +31,8 @@
     width: 100%;
     max-width: fit-content;
     height: auto;
+  }
+  @media (max-width: 1080px) {
+    width: 100%;
   }
 }
