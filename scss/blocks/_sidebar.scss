@@ -4,4 +4,8 @@
   padding: 20px;
   background: #fff;
   margin-bottom: 50px;
+  @media (max-width: 780px) {
+    width: 100%;
+    padding: 15px;
+  }
 }

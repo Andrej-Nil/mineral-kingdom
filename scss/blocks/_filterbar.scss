@@ -1,0 +1,14 @@
+.filterbar {
+}
+
+.filterbar__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.filterbar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

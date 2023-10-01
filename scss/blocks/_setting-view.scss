@@ -4,3 +4,10 @@
   gap: 20px;
   justify-content: space-between;
 }
+
+.setting-view__select {
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: start;
+  }
+}

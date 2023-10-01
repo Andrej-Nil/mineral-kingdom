@@ -17,51 +17,35 @@
   &_base {
     background: $color-4;
     color: #fff;
-    &:hover {
-      background: $color-5;
-    }
   }
 
   &_second-a {
     background: $color-4;
     color: #fff;
-    &:hover {
-      background: #a04b05;
-    }
   }
 
   &_second-b {
     background: $color-4;
     color: #fff;
-    &:hover {
-      background: #a04b05;
-    }
   }
 
-  //&_blue {
-  //  background: $second-color-b1;
-  //  color: #fff;
-  //  &:hover {
-  //    background: $second-color-b3;
-  //  }
-  //}
-  //&_green {
-  //  background: #009d54;
-  //  color: #ffffff;
-  //  &:hover {
-  //    background: #03c269;
-  //  }
-  //}
-  //&_grey {
-  //  background: #f0f0f0;
-  //  &:hover {
-  //    background: #ffffff;
-  //  }
-  //}
-  //&_bd {
-  //  border: 1px solid #aaa;
-  //  &:hover {
-  //    border: 1px solid #000;
-  //  }
-  //}
+  @media (min-width: 1080px) {
+    &_base {
+      &:hover {
+        background: $color-5;
+      }
+    }
+
+    &_second-a {
+      &:hover {
+        background: #a04b05;
+      }
+    }
+
+    &_second-b {
+      &:hover {
+        background: #a04b05;
+      }
+    }
+  }
 }

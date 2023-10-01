@@ -1,5 +1,9 @@
 .breadcrumbs {
   margin-bottom: 20px;
+
+  @media (max-width: 1080px) {
+    display: none;
+  }
 }
 
 .breadcrumbs__link {
