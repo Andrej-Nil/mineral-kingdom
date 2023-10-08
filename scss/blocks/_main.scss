@@ -2,7 +2,7 @@
   align-items: start;
   display: flex;
   gap: 20px;
-  @media (max-width: 780px) {
+  @media (max-width: 1080px) {
     flex-direction: column;
     gap: 0px;
   }

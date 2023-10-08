@@ -1,11 +1,24 @@
 .sidebar {
-  width: 300px;
   flex-shrink: 0;
-  padding: 20px;
+  width: 100%;
+  padding: 15px;
   background: #fff;
   margin-bottom: 50px;
-  @media (max-width: 780px) {
-    width: 100%;
-    padding: 15px;
+  @media (min-width: 1080px) {
+    width: 270px;
   }
+
+  @media (min-width: 1280px) {
+    width: 300px;
+  }
+
+  //@media (max-width: 780px) {
+  //  width: 100%;
+  //  padding: 15px;
+  //}
+
+  //@media (max-width: 936px) {
+  //  width: 270px;
+  //  padding: 15px;
+  //}
 }

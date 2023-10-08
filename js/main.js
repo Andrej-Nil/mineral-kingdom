@@ -12,7 +12,6 @@ class Modal {
   }
 }
 
-
 class CatalogModal extends Modal {
   constructor() {
     super("#catalogModal");
@@ -143,7 +142,71 @@ class Catalog {
   }
 }
 
+class Select {
+  constructor() {
+    this.init();
+  }
+
+  init = () => {
+    this.listeners()
+  }
+
+
+  open = ($select) => {
+    this.closeAll($select)
+    $select.dataset.select = 'open';
+    $select.classList.add('open');
+  }
+
+  close = ($select) => {
+    $select.dataset.select = 'close';
+    $select.classList.remove('open');
+  }
+
+  closeAll = () => {
+    const $selectList = document.querySelectorAll('[data-select]');
+    $selectList.forEach(($select) => this.close($select));
+  }
+
+  toggleSelect = ($target) => {
+    const $select = $target.closest('[data-select]');
+    if ($select.dataset.select === 'close') {
+      this.open($select);
+    } else {
+      this.closeAll();
+    }
+  }
+
+  changeTitle = ($target) => {
+    const title = $target.dataset.option
+    const $select = $target.closest('[data-select]');
+    const $selectTitle = $select.querySelector('[data-select-title]');
+    $selectTitle.innerText = title;
+  }
+
+
+  clickHandler = (e) => {
+    if (e.target.closest('[data-select-btn]')) {
+      this.toggleSelect(e.target);
+    } else {
+      this.closeAll();
+    }
+  }
+
+  changeHandler = (e) => {
+    if (e.target.closest('[data-option]')) {
+      this.changeTitle(e.target);
+    }
+  }
+  listeners = () => {
+    document.addEventListener('click', this.clickHandler)
+    document.addEventListener('change', this.changeHandler)
+  }
+}
+
 const catalogModal = new CatalogModal();
 const searchModal = new SearchModal();
 const navModal = new NavModal();
 const catalog = new Catalog();
+
+const select = new Select();

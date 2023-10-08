@@ -1,0 +1,33 @@
+.setting-select {
+  user-select: none;
+  position: relative;
+  &.open .setting-select__option-list {
+    display: block;
+  }
+}
+
+.setting-select__top {
+  color: $color-4;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.setting-select__option-list {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform: translateY(100%);
+  background: #fff;
+  padding: 10px;
+  min-width: 250px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 100;
+}
+
+.setting-select__option {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
