@@ -1549,6 +1549,12 @@ body {
   }
 }
 
+@media (max-width: 1080px) {
+  .categorybar {
+    display: none;
+  }
+}
+
 .filterbar__top {
   margin-bottom: 20px;
   display: flex;
@@ -1916,4 +1922,4 @@ body {
 
 .dn {
   display: none;
-}
+}/*# sourceMappingURL=style.css.map */
