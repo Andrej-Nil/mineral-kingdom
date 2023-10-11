@@ -24,6 +24,7 @@
           <div class="header__contact-info">
             <span class="header__city">Екатеринбург</span>
 
+
             <a href="mailto:test@test.ru" class="header__contact">
               test@test.ru
             </a>
@@ -32,8 +33,32 @@
             </a>
 
           </div>
+        </div>
+      </div>
+      <div class="header-center">
+        <div class="header-center__inner container">
+          <span data-catalog-btn class="catalog-btn btn btn_base  btn_bd">
+            <span class="catalog-btn__text">Каталог</span>
+            <img class="catalog-btn__icon" src="./images/icon/catalog.svg" alt="" width="20px" height="20px">
+          </span>
+
+          <nav class="nav">
+            <a href="/" class="nav__item active">Главная</a>
+            <a href="/about.html" class="nav__item">О нас</a>
+            <a href="/news.html" class="nav__item">Новости</a>
+            <a href="/contacts.html" class="nav__item">Контакты</a>
+            <a href="/delivery.html" class="nav__item">Доставка</a>
+          </nav>
 
           <div class="menu">
+
+            <div data-search-btn class="menu-item">
+              <div class="menu-item__btn">
+                <img class="menu-item__icon" src="./images/icon/search.svg" alt="" width="36px" height="36px">
+              </div>
+            </div>
+
+
             <div class="menu-item">
               <div class="menu-item__btn">
                 <img class="menu-item__icon" src="./images/icon/user.svg" alt="" width="36px" height="36px">
@@ -65,7 +90,7 @@
 
                       <p class="short-basket__row">
                         <span class="short-basket__label">На сумму:</span>
-                        <span class="short-basket__value">10 100руб</span>
+                        <span class="short-basket__value">10 100₽</span>
                       </p>
                     </div>
                     <a href="./basket.html" class="short-basket__btn btn btn_base">
@@ -78,34 +103,18 @@
 
 
           </div>
-        </div>
-      </div>
-      <div class="header-center">
-        <div class="header-center__inner container">
-          <span class="catalog-btn btn btn_base  btn_bd">
-            <span class="catalog-btn__text">Каталог</span>
-            <img class="catalog-btn__icon" src="./images/icon/menu.svg" alt="" width="20px" height="20px">
-          </span>
 
-          <nav class="nav">
-            <a href="/" class="nav__item active">Главная</a>
-            <a href="/about.html" class="nav__item">О нас</a>
-            <a href="/news.html" class="nav__item">Новости</a>
-            <a href="/contacts.html" class="nav__item">Контакты</a>
-            <a href="/delivery.html" class="nav__item">Доставка</a>
-          </nav>
+          <!--<form class="header__search search" action="" method="GET">-->
+          <!--<label class="search__label" for="headerSearch">Поиск</label>-->
+          <!--<div class="search__controls">
+              <input id="headerSearch" class="search__input input" type="text" name="search" />-->
 
-          <form class="header__search search" action="" method="GET">
-            <label class="search__label" for="headerSearch">Поиск</label>
-            <div class="search__controls">
-              <input id="headerSearch" class="search__input input" type="text" name="search" />
+          <!--<button type="submit" class="search__btn btn">
+              <img class="search__icon" src="./images/icon/search.svg" alt="" width="20px" height="20px">
+            </button>-->
+          <!--</div>-->
 
-              <button type="submit" class="search__btn btn">
-                <img class="search__icon" src="./images/icon/search.svg" alt="" width="20px" height="20px">
-              </button>
-            </div>
-
-          </form>
+          <!--</form>-->
         </div>
       </div>
     </header>
@@ -154,8 +163,9 @@
           </a>
           <div class="footer__contacts">
             <span class="footer__city">Екатеринбург</span>
-            <a href="/" class="footer__phone">+7-990-000-22-33</a>
             <a href="/" class="footer__mail">test@test.ru</a>
+            <a href="/" class="footer__phone">+7-990-000-22-33</a>
+
           </div>
           <div class="footer-nav nav">
             <a href="/" class="footer-nav__item nav__item">Главная</a>
@@ -174,27 +184,69 @@
       </div>
     </footer>
 
-    <div class="catalog">
-      <div class="catalog__inner">
-        <div class="catalog-nav">
 
-          <div class="catalog-nav__title">
-            Каталог
+    <div class="mobile-menu">
+      <div class="menu">
+
+        <div data-catalog-btn class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/catalog-m.svg" alt="" width="36px" height="36px">
           </div>
+        </div>
 
-          <div class="catalog-nav__list">
-            <a href="./" class="catalog-nav__link active">Окаменелости</a>
-            <a href="./" class="catalog-nav__link"> Полудрагоценные камни</a>
-            <a href="./" class="catalog-nav__link">Драгоценные камни</a>
-            <a href="./" class="catalog-nav__link">Минералы</a>
-            <a href="./" class="catalog-nav__link">Аксессуары</a>
-            <a href="./" class="catalog-nav__link">Книги</a>
+        <div data-nav-btn class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/menu-m.svg" alt="" width="30px" height="30px">
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/user-m.svg" alt="" width="36px" height="36px">
+          </div>
+        </div>
+
+        <div data-search-btn class="menu-item">
+          <div class="menu-item__btn">
+            <img class="menu-item__icon" src="./images/icon/search-m.svg" alt="" width="36px" height="36px">
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__btn">
+            <span class="menu-item__sticker">13</span>
+            <img class="menu-item__icon" src="./images/icon/basket-m.svg" alt="" width="30px" height="30px">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="catalogModal" class="modal catalog">
+      <div data-close class="modal__bg"></div>
+      <div id="catalog" class="catalog__inner">
+        <div class="catalog-nav">
+          <div class="catalog-nav__top">
+
+            <p class="catalog-nav__title">
+              Каталог
+            </p>
+
+            <span data-close class="catalog__close"></span>
+          </div>
+          <div id="categoryNav" class="catalog-nav__list">
+            <a data-category-item="1" href="./" class="catalog-nav__link active">Окаменелости</a>
+            <a data-category-item="2" href="./" class="catalog-nav__link"> Полудрагоценные камни</a>
+            <a data-category-item="3" href="./" class="catalog-nav__link">Драгоценные камни</a>
+            <a data-category-item="4" href="./" class="catalog-nav__link">Минералы</a>
+            <a data-category-item="5" href="./" class="catalog-nav__link">Аксессуары</a>
+            <a data-category-item="6" href="./" class="catalog-nav__link">Книги</a>
           </div>
         </div>
         <div class="catalog__content">
 
           <div class="catalog__top">
-            <div class="catalog__search search" action="" method="GET">
+            <div class="catalog__search search">
               <div class="search__controls">
                 <input id="catalogSearch" class="search__input input" type="text" name="search" placeholder="Поиск" />
 
@@ -202,15 +254,14 @@
                   <img class="search__icon" src="./images/icon/search.svg" alt="" width="20px" height="20px">
                 </button>
               </div>
-
             </div>
 
 
 
-            <span class="catalog__close"></span>
+            <span data-close class="catalog__close"></span>
           </div>
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="1" class="catalog-menu show">
             <p class="catalog-menu__title">
               Окаменелости
             </p>
@@ -352,7 +403,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu show">
+          <div data-category="2" class="catalog-menu">
             <p class="catalog-menu__title">
               Полудрагоценные камни
             </p>
@@ -494,7 +545,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="3" class="catalog-menu">
             <p class="catalog-menu__title">
               Драгоценные камни
             </p>
@@ -636,7 +687,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="4" class="catalog-menu">
             <p class="catalog-menu__title">
               Минералы
             </p>
@@ -778,7 +829,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="5" class="catalog-menu">
             <p class="catalog-menu__title">
               Аксессуары
             </p>
@@ -920,7 +971,7 @@
           <!--catalog-menu-->
 
           <!--catalog-menu-->
-          <div class="catalog-menu">
+          <div data-category="6" class="catalog-menu">
             <p class="catalog-menu__title">
               Книги
             </p>
@@ -1060,6 +1111,56 @@
             </div>
           </div>
           <!--catalog-menu-->
+        </div>
+
+      </div>
+    </div>
+
+    <div id="searchModal" class="modal search-modal">
+      <div data-close class="modal__bg"></div>
+      <div class="search-modal__inner slim-container">
+        <div class="search-modal__top">
+          <p class="search-modal__title">Поиск</p>
+          <img data-close src="./images/icon/close.svg" alt="" class="search-modal__close">
+        </div>
+
+        <form class="catalog__search search" action="" method="GET">
+          <div class="search__controls">
+            <input class="search__input input" type="text" name="search" placeholder="Поиск" />
+
+            <button class="search__btn btn">
+              <img class="search__icon" src="./images/icon/search.svg" alt="" width="22px" height="22px">
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="navModal" class="modal nav-modal">
+      <div data-close class="modal__bg"></div>
+      <div class="nav-modal__inner">
+
+        <div class="nav-modal__top">
+          <p class="nav-modal__title">Навигация</p>
+          <img data-close src="./images/icon/close.svg" alt="" class="nav-modal__close">
+        </div>
+
+        <div class="nav-modal__list">
+          <a href="/" class="nav-modal__item">
+            Главная
+          </a>
+          <a href="/about.html" class="nav-modal__item">
+            О нас
+          </a>
+          <a href="/news.html" class="nav-modal__item">
+            Новости
+          </a>
+          <a href="/contacts.html" class="nav-modal__item">
+            Контакты
+          </a>
+          <a href="/.html" class="nav-modal__item">
+            Доставка
+          </a>
         </div>
 
       </div>
